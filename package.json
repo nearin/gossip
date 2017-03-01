@@ -5,7 +5,7 @@
   "author": "Pontus Nydensten <pontusn@kth.se>",
   "private": true,
   "scripts": {
-    "start": "npm run dev",
+    "start": "npm install && npm run build && node app.js",
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
